@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Réservation de Salle</title>
+</head>
+<body>
+    <header>
+        <h1>Réservez une salle</h1>
+    </header>
+    <main>
+        <form action="reserver.php" method="POST">
+            <label for="salle">Choisissez une salle :</label>
+            <select name="salle_id" id="salle" >
+                <option value="1">Fitness</option>
+                <option value="2">Musculation</option>
+                <option value="3">Cardio</option>
+            </select>
+            <br><br>
+            <label for="date">Date de réservation :</label>
+            <input type="date" name="date_reservation" id="date" required>
+            <br><br>
+            <label for="nom">Votre nom :</label>
+            <input type="text" name="nom_utilisateur" id="nom" required>
+            <br><br>
+            <button type="submit">Réserver</button>
+        </form>
+    </main>
+</body>
+</html>
